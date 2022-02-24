@@ -1,0 +1,119 @@
+#map,.map2{
+    height: 232px !important;
+    width: 232px;
+}
+
+main > p{
+    color: black;
+}
+.User > h2{
+    text-align: center;
+    color: black;
+}
+.User >p {
+    color: white;
+    font-size: 20px;
+}
+.button{
+    padding: 5px 20px;
+    position:absolute;
+}
+.reportes{
+    width: 75%;
+}
+.infoUser{
+    width: 75%;
+}
+.perfilimg{
+    max-width:300px ;
+    max-height:300px ;
+}
+hr{
+    height:1px !important;
+    border:none !important;
+    color:#333 !important;
+    background-color:#333 !important;
+}
+#userView{
+    width: 200px;
+    height: 200px;
+}
+#arquivo{
+    display: none;
+}
+#upload{
+    font-size: 25px;
+    color: blue;
+    margin-left: 2px;
+}
+.inputButton{
+    cursor: pointer;
+}
+.perfilimg{
+    max-width:200px ;
+    max-height:200px ;
+}
+
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+	content: counter(stepNum);
+	font-family: inherit;
+	font-weight: 700;
+}
+.multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+	background-color: #ededed;
+}
+.multi-steps {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+.multi-steps > li {
+	counter-increment: stepNum;
+	text-align: center;
+	display: table-cell;
+	position: r;
+	color:  green;
+}
+.multi-steps > li:before {
+	content: '\f00c';
+	content: '\2713';
+	content: '\10003';
+	content: '\10004';
+	content: '\2713';
+	display: block;
+	margin: 0 auto 4px;
+	background-color: #fff;
+	width: 36px;
+	height: 36px;
+	line-height: 32px;
+	text-align: center;
+	font-weight: bold;
+	border-width: 2px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 50%;
+}
+.multi-steps > li:last-child:after {
+	display: none;
+}
+.multi-steps > li.is-active:before {
+	background-color: #fff;
+	border-color: green;
+}
+.multi-steps > li.is-active ~ li {
+	color: #808080;
+}
+.multi-steps > li.is-active ~ li:before {
+	background-color: #ededed;
+	border-color: #ededed;
+}
+
+@media only screen and (max-width: 640px) {
+    
+    .reportes{
+        width: 95%;
+    }
+    .infoUser{
+        width: 95%;
+    }
+}

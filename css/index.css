@@ -1,0 +1,160 @@
+body{
+    color:#1c1c1c;
+}
+
+h1,h2,h3{
+    color:#000;
+    
+}
+/*Fonte de todo site*/
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.texto-campanha{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+/*-------------------------*/
+/*Carousel*/
+.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-caption >h5{
+    color: black;
+}
+.carousel-inner{
+    max-height: 550px;
+}
+.carousel-item > a > img{
+    max-height: 550px;
+}
+/*-------------------------*/
+
+/*Campanha*/
+.titulo { grid-area: header;}
+.img-campanha{ grid-area: menu; }
+.texto-campanha { grid-area: main; }
+ 
+.campanha{
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'menu main main main main main';
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 100px 20px 100px;
+    color: #000;
+
+    width: 90%;
+    margin: 1px auto;
+}
+.campanha h2{
+    color:orange;
+    text-align: center;
+}
+.campanha p{
+    font-size: 20px;
+}
+.campanha p{
+    margin-bottom: 2.5rem;
+    max-width: 1000px;
+}
+.texto-campanha{
+    text-align: justify;
+}
+/*-------------------------*/
+
+/*-------------------------*/
+@media only screen and (max-width: 1000px) {
+    .campanha{
+        width: 90%;
+        margin: 1 auto;
+    }
+
+    .texto-campanha{
+        text-align:justify;
+        color: #000;
+        font-size: 20px;
+    }
+    .campanha {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'main main main main main main';
+        grid-gap: 1px;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 20px 20px;
+        color: #000;
+    }
+
+
+}
+@media only screen and (max-width: 800px) {
+    .campanha{
+        width: 100%;
+        margin: 1 auto;
+    }
+
+    .texto-campanha{
+        text-align:justify;
+        color: #000;
+        font-size: 20px;
+    }
+    .campanha {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'main main main main main main';
+        grid-gap: 1px;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 20px 20px;
+        color: #000;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .campanha{
+        width: 100%;
+        margin: 1 auto;
+    }
+ 
+    .texto-campanha{
+        text-align:justify;
+        color: #000;
+        font-size: 20px;
+    }
+    .campanha {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'main main main main main main';
+        grid-gap: 1px;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 20px 20px;
+        color: #000;
+    }
+
+}
